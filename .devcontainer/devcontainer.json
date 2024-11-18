@@ -1,0 +1,6 @@
+{
+	"image": "mcr.microsoft.com/devcontainers/dotnet:8.0",
+	"forwardPorts": [5000],
+	"postCreateCommand": "dotnet restore",
+	"workspaceFolder": "/workspace"
+  }
