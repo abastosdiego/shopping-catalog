@@ -1,6 +1,9 @@
 {
-	"image": "mcr.microsoft.com/devcontainers/dotnet:8.0",
+	"name": "C# Dev Container",
+	"dockerComposeFile": "../docker-compose.yml",
+	"service": "catalog",
+	"workspaceFolder": "/app",
 	"forwardPorts": [5000],
 	"postCreateCommand": "dotnet restore",
-	"workspaceFolder": "/workspace"
-  }
+	"shutdownAction": "stopCompose"
+}
